@@ -1,15 +1,151 @@
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: "tngan";
+    src: url('Font/tengwar_annatar/tngan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "partybusiness";
+    src: url('Font/nancy-lorenz_party-business/partybusiness.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "anirm___";
+    src: url('Font/pete_klassen_aniron/anirm___.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERAL SETTINGS */
+
+.bg-orange {
+    background: #fe661d;
+}
+
+img {
+    max-width:100%;
+    height: auto;
+}
+
+li {
+    list-style:none;
+    font-family: "anirm___", sans-serif;
+}
+
+h3 {
+    font-family: "anirm___", sans-serif;
+    font-size: 2em;
+    margin: 2px 15px 2px 25px;
+}
+
+h4 {
+    color: #fe661d;
+    margin: 2px 15px 2px 25px;
+}
+
+p {
+    font-family: "partybusiness", sans-serif;
+    font-size: 1.2em;
+    color: #000000;
+    margin: 2px 15px 2px 30px;
+}
+
+p2 {
+    font-family: "partybusiness", sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    margin: 2px 15px 2px 30px;
+}
+
+p3 {
+    font-family: "partybusiness", sans-serif;
+    font-size: 1em;
+    color: #fe661d;
+    margin: 2px 15px 2px 30px;
+}
+
+body {
+    font-family: "anirm___", sans-serif;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    line-height: 20px;
+    background: #ffffff;
+    color: #ff6b00;
+    border: groove;
+    -webkit-transition: all 0.7s ease-out 0s;
+    -moz-transition: all 0.7s ease-out 0s;
+    transition: all 0.7s ease-out 0s;
+    font-weight: bold;
+    text-align: center;
+    z-index: -1;
+    transform: skewX(-25deg);
+}
+
+.btn:hover {
+    background: #ff6b00;
+    color: #ffffff;
+    border: none;
+}
+
+.button2 {
+    display: block;
+    width: 120px;
+    line-height: 25px;
+    background: #000000;
+    color: #ff6b00;
+    -webkit-transition: all 0.7s ease-out 0s;
+    -moz-transition: all 0.7s ease-out 0s;
+    transition: all 0.7s ease-out 0s;
+    font-weight: bold;
+    text-align: center;
+    transform: skewX(-25deg);
+}
+
+
+.button3 {
+    display: block;
+    width: 400px;
+    line-height: 35px;
+    background: #000000;
+    color: #ff6b00;
+    -webkit-transition: all 0.7s ease-out 0s;
+    -moz-transition: all 0.7s ease-out 0s;
+    transition: all 0.7s ease-out 0s;
+    font-weight: bold;
+    text-align: center;
+    transform: skewX(-25deg);
+}
+
+.button2:hover, .button3:hover {
+    background: #ff6b00;
+    color: #000000;
+}
+
+
+
 /* Navbar */
 
-#Navbar a {
-    font-size: 2rem;
+nav a {
+    font-size: 0.8rem;
     color: white;
 }
 
-#Navbar a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
 @media screen and (min-width: 991px) {
+
     .text-piped a::after {
         content: "|";
         color: white;
@@ -33,6 +169,10 @@
     left: 0;
     text-align: left;
     animation: 10s slidy infinite;
+}
+
+.container-fluid {
+    width: 100%;
 }
 
 #carousel-item img {
@@ -59,70 +199,203 @@
     100% { left: -400%; }
 }
 
+#carousel-caption {
+
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    font-size: 5rem;
+    font-family: "partybusiness";
+}
+
+.carousel-caption-text {
+    font-size: 3rem;
+}
+
+
+.fellows, .hunters, .army {
+    background-image: url(images/bg_light.png);
+    width: 100%;
+    height: 100%;
+}
+
+.reward, .ring, .contact {
+    background-image: url(images/bg_dark.png);
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+#card-fellows .card {
+    height: 100%;
+    border: 4px solid black
+}
+
+.card-body {
+    background-color: #000000;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
 
 /* Fellows */
 
-/* portraits */
+.card-img-top card-custom {
+    opacity: 1.5;
+}
 
-#gandalf {
-    width: 342px;
-    height: 393px;
-    font-family : Arial, sans-serif;
+.card-custom-1, card-custom-2 {
+    filter: brightness(80%);
+}
+
+
+
+.card-custom:hover {
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.card-custom:hover + .card-custom-reward + .card-custom-dead f{
+    display: none;
+}
+
+.card-custom:hover ~ p {
+    font-size: 25px;
+    top: 250px;
+}
+
+.card {
     position: relative;
-}
-
-#gandalf img {
-    opacity: 0.6;
-}
-
-.card-img-top card-custom img {
-    opacity: 0.6;
-}
-
-.card-custom-name {
-    color: white;
-    position: absolute;
-    top: 100px;
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: normal;
-    width: 100%;
+    width: 244px;
 }
 
 .card-custom-reward {
     position: absolute;
-    top: 10px;
-    left: 5%;
-    margin: auto;
-    width:90%;
+    width: 80%;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
     text-align: center;
-    background: white;
-    border-radius: 5px;
-    opacity: 0.8;
-    font-size: 1.5em;
-    padding: 10px 25px;
-    box-sizing: border-box;
 }
 
-.card-custom-reward span {
-    color:#FF601E;
+.card-custom-dead {
+    position: absolute;
+    width: 80%;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
 }
 
-#gandalf:hover img {
-    opacity: 1;
+.card-custom-name-1, .card-custom-name-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: white;
+    text-align: center;
 }
 
-#gandalf:hover .reward {
-    display: none;
+.card-custom-name-2 {
+    text-decoration: line-through #ff6b00;
+
 }
 
-#gandalf:hover h3 {
-    font-size: 1.2em;
-    top:initial;
-    bottom: -10px;
+.card-custom-reward-value, .card-custom-dead {
+    color: #ff6b00;
 }
+
+
+.symbol1, .symbol2 {
+    font-family: "tngan";
+    color: #ff6b00;
+    text-align: center;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #ff6b00;
+    text-decoration: underline;
+}
+
+.nav-pills .nav-link.active::after {
+    content: "t";
+    margin-left: 5px;
+    font-family: "tngan";
+}
+
+.nav-pills .nav-link.active::before {
+    content: "t";
+    margin-right: 5px;
+    font-family: "tngan";
+}
+
+
+.nav-pills .nav-link.active + .symbol2 {
+    display: inline;
+}
+
+
+.nav-pills .nav-link.active {
+    display: inline;
+}
+
+.nav-link {
+    color: gray;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+
+/* Reward */
+
+#reward-img {
+    margin-right: 10px;
+}
+
+
 
 /* About The Ring */
+
+.card-header {
+    background-color: #ff6b00;
+    color: #ffffff;
+}
+
+.card-text {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.card-body-2 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.table {
+    background-color: #ffffff;
+}
+
+.title {
+    font-size: 20px;
+}
+
+th, td {
+    width: 50%;
+    color: #000000;
+}
 
 .gollum
 {
@@ -137,7 +410,31 @@
     z-index: 5;
 }
 
-
 .one{
     color: white;
+    font-size: 0.7em;
 }
+
+.blockquote-footer {
+    position: relative;
+    left: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Join The Army */
+
+.info {
+    color: #ff6b00:
+}
+
+

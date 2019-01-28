@@ -3,12 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheet Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>FindThePrecious</title>
 </head>
@@ -18,8 +18,8 @@
 
 <header>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <h4>FindThePrecious.com</h4>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-orange">
+        <h3><img class="d-block w-100" src="images/logo.png" alt="logo"></h3>
         <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo1" aria-controls="navbarTogglerDemo1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo1">
             <ul class="navbar nav">
@@ -32,9 +32,8 @@
             </ul>
         </div>
     </nav>
-
     <!-- Carousel-->
-    <section class="container-fluid">
+    <section class="container-fluid p-0">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -45,21 +44,20 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/filmPicture.jpeg/150x50" alt="filmPicture">
+                    <img class="d-block w-100" src="images/dark_vador.jpg" alt="dark_vador">
                     <div class="carousel-caption d-md-block align-items-center">
-                        <h1>Dangerous fellowhip try to destroy the ring</h1>
+                        <h1>Sauron is a very good bro.</h1>
+                        <p>Please, help him to find his ring !</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/battle.jpeg/150x50"battle">
+                    <img class="d-block w-100" src="images/army.png" alt="army">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>Orcs, Goblins, Balrogs, protect your master Sauron !</h1>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/goldenRing.jpeg/150x50" alt="goldenRing">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>hlkhlhlkgl</h1>
                     </div>
                 </div>
             </div>
@@ -74,14 +72,13 @@
             </a>
         </div>
     </section>
-
 </header>
 
 
 <!-- Section Fellows -->
-<section class="container">
+<section class="fellows">
     <div class="row">
-        <h3 class="pb-5"><span class="symbol1"></span><strong>Fellows wanted dead </strong><small>(or alive if you want to eat them later)</small><span class="symbol1"> ! </span></h3>
+        <h3 class="pb-5"><span class="symbol1"> ij </span><strong> Fellows wanted dead </strong><small>(or alive if you want to eat them later) ! </small><span class="symbol1">ij</span></h3>
     </div>
 
     <!-- pills -->
@@ -91,7 +88,7 @@
                 <div>
                     <ul class="nav nav-pills nav-fill">
                         <li class="nav-item"><a class="nav-link" href="#p1">Most wanted</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#p2"><span class="symbol"></span>Most dangerous</span></a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#p2"><span class="symbol2"></span> Most dangerous <span class="symbol2"></span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#p3">Already captured</a></li>
                     </ul>
                 </div>
@@ -100,106 +97,104 @@
     </div>
 
     <!-- portraits -->
-    <div class="container">
         <div class="row d-flex flex-md-nowrap">
             <div class="col-xs-12 col-md-4 card bloc ml-2 mr-2 mb-2">
                 <div id="gandalf" class="card-body">
-                    <img class="card-img-top card-custom" src="http://images.innoveduc.fr/integration_gandalf.png" alt="Gandalf" width="289" height="331">
+                    <img class="card-img-top card-custom-1" src="images/gandalf.png" alt="Gandalf">
                     <div class="card-custom-reward">Reward<br><span class="card-custom-reward-value">1000 </span>golden coins</div>
-                    <h4 class="card-custom-name">The Wizard</h4>
+                    <h4 class="card-custom-name-1">Gandalf</h4>
                     <div class="card-body">
-                        <p class="card-text">small description</p>
+                        <p class="card-text">a very dangerous wizard and ballrog killer...</p>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4 card bloc ml-2 mr-2 mb-2">
-                <div id="gandalf" class="card-body">
-                    <img class="card-img-top card-custom" src="http://images.innoveduc.fr/integration_gandalf.png" alt="Gandalf" width="289" height="331">
-                    <div class="card-custom-reward">DEAD<br><span class="card-custom-reward-value"></span></div>
-                    <h4 class="card-custom-name">#Hobbit3</h4>
+                <div id="aragorn" class="card-body">
+                    <img class="card-img-top card-custom-1" src="images/aragorn.png" alt="Aragorn">
+                    <div class="card-custom-reward">Reward<br><span class="card-custom-reward-value">800 </span>golden coins</div>
+                    <h4 class="card-custom-name-1">Aragorn</h4>
                     <div class="card-body">
-                        <p class="card-text">small description</p>
+                        <p class="card-text">Sauron's finger says him his word is dangerous...</p>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4 card bloc ml-2 mr-2 mb-2">
-                <div id="gandalf" class="card-body">
-                    <img class="card-img-top card-custom" src="http://images.innoveduc.fr/integration_gandalf.png" alt="Gandalf" width="289" height="331">
-                    <div class="card-custom-reward">Reward<br><span class="card-custom-reward-value">250 </span>golden coins</div>
-                    <h4 class="card-custom-name">Ymmy Dwarf</h4>
+                <div id="gimli" class="card-body">
+                    <img class="card-img-top card-custom-2" src="images/gimli.png" alt="Gimli">
+                    <div class="card-custom-dead">DEAD<br><span class="card-custom-dead"></span></div>
+                    <h4 class="card-custom-name-2">Gimli</h4>
                     <div class="card-body">
-                        <p class="card-text">small description</p>
+                        <p class="card-text">a dwarf which a beard and an axe...</p>
                     </div>
                 </div>
             </div>
+
         </div>
-    </div
 </section>
-<hr/>
+
 
 
 <!-- section Reward-->
-<section class="container">
+<section class="reward" id="black">
     <div class="row">
+        <div>
+            <h3 id="reward"><span class="symbol1"> ij </span><strong> I have captured one of them, how to get my reward ? </strong><span class="symbol1">ij</span></h3><br>
+        </div>
         <div class="col-xs-12 col-md-8">
-            <h3 id="reward"><strong>I have captured one of them, how to get my reward ?</strong></h3>
-            <p>Lorem ipsum dolor sit amet, ....</p><br/>
-            <a class="btn btn-primary justify-content-center" href="#contact" role="button">Contact Us</a>
+            <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p2><br/>
         </div>
         <div class="col-xs-12 col-md-4">
-            <img  id="reward-img" src="http://via.placeholder.com/140x140" alt="revward">
+            <img  id="reward-img" class="rounded-circle float-md-right ml-3" src="images/coin_sauron.png" alt="revward">
+        </div>
+        <div class="col-xs-12 col-md-12">
+            <a class="btn btn-primary justify-content-center" href="#contact" role="button">Contact Us</a>
         </div>
     </div>
-
 </section>
-<hr/>
-
 
 <!-- section Best Hunters -->
-<section class="container">
+<section class="hunters">
     <div class="row">
-        <h3 class="col-12" id="hunters"><strong>Best hunters</strong></h3>
+        <h3 class="col-12" id="hunters"><span class="symbol1"> ij </span><strong> Our Best hunters </strong><span class="symbol1"> ij </span></h3><br>
     </div>
     <div class="row">
         <div class="col-xs-12 col-md-6 media">
-            <img class="image_media" src="http://via.placeholder.com/70x70" alt="placeholder">
+            <img class="image_media rounded-circle" src="images/hunter1.png" alt="hunter1">
             <div class="media-body">
-                <h3 class="mt-0">ElvesKiller22</h3>
+                <h4 class="mt-0">ElvesKiller22</h4>
                 <p>2 captures - <a href="#">Profile</a></p>
-                <p><a href="#like">Like</a></p>
+                <p><a href="#like" class="button2"><img class="w-30" src="images/ring.png" alt="ring">12 rings</a></p>
             </div>
         </div>
         <div class="col-xs-12 col-md-6 media">
-            <img class="image_media" src="http://via.placeholder.com/70x70" alt="placeholder">
+            <img class="image_media rounded-circle" src="images/hunter2.png" alt="hunter2">
             <div class="media-body">
-                <h3 class="mt-0">Goblin45</h3>
+                <h4 class="mt-0">Goblin45</h4>
                 <p>1 capture - <a href="#">Profile</a></p>
-                <p><a href="#like">Like</a></p>
+                <p><a href="#like" class="button2"><img class="w-30" src="images/ring.png" alt="ring">18 rings</a></p>
             </div>
         </div>
     </div>
 </section>
-<hr/>
-
 
 <!-- section The Ring -->
-<section class="container">
+<section class="ring" id="black">
     <div class="row">
-        <h3 id="ring"><strong>About the ring</strong></h3>
+        <h3 id="ring"><span class="symbol1"> ij </span><strong> About the ring </strong><span class="symbol1"> ij </span></h3><br>
     </div>
     <div class="row">
         <div class="col-12 card">
-            <h3 class="card-header">Ring capabilities</h3>
-            <div class="card-body">
+            <div class="card-header ">Ring capabilities</div>
+            <div class="card-body-2">
                 <p class="card-title">What can our master Sauron do with the ring ?</p>
                 <table class="table table-striped card-text">
-                    <tr class="thead-dark">
-                        <th scope="col">Feature</th>
-                        <th scope="col">Description</th>
+                    <tr>
+                        <th scope="col" class="title">Feature</th>
+                        <th scope="col" class="title">Description</th>
                     </tr>
                     <tr>
                         <th scope="row">Main</th>
-                        <td>One ring to rule them all</td>
+                        <td>Rule them all</td>
                     </tr>
                     <tr>
                         <th scope="row">Invisibility</th>
@@ -213,67 +208,63 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 card">
-            <h3 class="card-header">Why the ring is awesome ?</h3>
-            <div class="card-body row">
-                <div class="col-xs-6 col-md-9">
-                    <p>My preciooooooussssss ! Hrk Hrk, we want our preeciooooouuusssss !!<p>
-                    <p>Gollum</p>
-                </div>
-                <div class="col-xs-6 col-md-3 center-block justify-content-center">
-                    <img src="images/gollum" class="gollum" alt="gollum">
-                </div>
-            </div>
+    <div class="card mt-3" style="width: 100%">
+        <div class="card-header">Why the ring is awesome ?</div>
+        <div class="card-body-2">
+                <img src="images/gollum3.png" class="rounded-circle float-md-right ml-3" alt="Gollum image">
+                <p>My preciooooooussssss ! Hrk Hrk, we want  our preeciooooouuusssss !!</p>
+                <footer class="blockquote-footer">Gollum</footer>
         </div>
     </div>
 </section>
-<hr/>
-
 
 <!-- section Join the Army -->
-<section class="container">
+<section class="army">
     <div class="row">
-        <div class="col-xs-12 col-md-4">
-            <img class="illustratives" src="http://via.placeholder.com/140x140" alt="placeholder">
+        <div class="col-xs-12 col-md-12">
+            <h3 id="army"><span class="symbol1"> ij</span><strong> Join Mordor Army, we need you !</strong><span class="symbol1"> ij </span></h3><br>
         </div>
         <div class="col-xs-12 col-md-8">
-            <h3 id="army"><strong>Join Mordor Army, we need you !</strong></h3>
-            <p>Lorem ipsum dolor sit amet, ...</p>
-            <a class="btn btn-primary justify-content-center" href="#" role="button">More info on SauronRulesThemAll.com</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <img class="illustratives" src="images/army.png" alt="army" >
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <img class="illustratives" src="images/weneedyou-1.png" alt="need" >
+        </div>
+        <div class="col-xs-12 col-md-8 d-flex justify-content-center align-items-center flex-column">
+            <p>More info on</p>
+            <a class="button3" href="#" role="button">SauronRulesThemAll.com</a>
         </div>
     </div>
 </section>
-<hr/>
-
 
 <!-- section Contact -->
-<section class="container">
+<section class="contact" id="black">
     <div class="row">
         <div class="col-12">
-            <h3 id="contact"><strong>Contact Us</strong></h3>
+            <h3 id="contact"><span class="symbol1"> ij </span><strong> Contact Us </strong><span class="symbol1"> ij </span></h3><br>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-md-6 offset-md-3">
+        <div class="col-xs-12 col-md-6">
             <form autocomplete="on" action="action_page.php" class="form-group">
-                <label for="fullname">Your Fullname :</label>
-                <input type="text" class="form-control" name="fullname" required placeholder="fullname"><br/>
+                <input type="email" class="form-control" name="email" required placeholder="@"><br/>
+                <input type="text" class="form-control" name="address" required placeholder="address"><br/>
 
-                <label for="email">Your email :</label>
-                <input type="email" class="form-control" name="email" required placeholder="__________@___________"><br/>
-
-                <label for="seen">You have seen of them :</label>
                 <select class="form-control">
-                    <option value="select">Select</option>
+                    <option value="select">I have seen one of them :</option>
                     <option value="select">aaa</option>
                     <option value="select">bbb</option>
                     <option value="select">ccc</option>
                 </select><br/>
 
-                <label for="message">Your message :</label>
-                <input type="text" class="form-control" name="message" placeholder="..."><br/>
+                <textarea class="form-control" name="message" placeholder="Your message to the master" rows="5"></textarea>
             </form>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <img class="illustratives" src="images/map.png" alt="map" width="444" height="303">
         </div>
     </div>
     <div class="row center-block">
@@ -282,11 +273,10 @@
         </div>
     </div>
 </section>
-<hr/>
 
 <!-- Footer -->
-<footer class="container bg-dark">
-    <nav class="row justify-content-center">
+<footer class="container-fluid">
+    <nav class="row justify-content-center bg-orange">
         <ul class="col-xs-12 col-md-4">
             <li><a class="one" href="#">About us</a></li>
             <li><a class="one" href="#">Fellows</a></li>
@@ -299,7 +289,8 @@
         </ul>
         <ul class="col-xs-12 col-md-4">
             <li><a class="one" href="#">Sauron4Ever.com</a></li>
-            <li><a class="one" href="#">Follow him also on twitter</a></li>
+            <li><a class="one" href="#">Follow him also on twitter</a></li><br>
+            <li><img class="d-block w-50" src="images/logo.png" alt="logo"></li>
         </ul>
     </nav>
 </footer>
@@ -311,5 +302,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
